@@ -13,7 +13,7 @@ APPROVED_BREEDS = [
 
 class Dog:
     def __init__(self, name='dog', breed = None ):
-            if type(name) == str and (0 < len(name) < 26):
+            if type(name) == str and (1 <= len(name) <= 25):
                 self.name = name
             else:
                 return print('Name must be string between 1 and 25 characters.')
@@ -41,8 +41,6 @@ class Dog:
     #     else:
     #         print("Breed must be in list of approved breeds.")
          
-
-    
     # def get_breed(self):
         # return self._breed
     
